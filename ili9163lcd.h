@@ -165,5 +165,5 @@ void lcdPutCh(unsigned char character, uint8_t x, uint8_t y, uint16_t fgColour, 
 void lcdPutS(const char *string, uint8_t x, uint8_t y, uint16_t fgColour, uint16_t bgColour);
 
 void lcdBitmap(const unsigned char *data, uint8_t width, uint8_t heigth, uint8_t x, uint8_t y, uint16_t fgColour, uint16_t bgColour);
-void lcdPutCount(int count, uint8_t x, uint8_t y, uint16_t fgColour, uint16_t bgColour);
+
 #endif /* ILI9163LCD_H_ */

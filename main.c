@@ -416,7 +416,7 @@ int main(void)
 	LED_EIN;
 	lcdClearDisplay(BLACK);
 	LED_AUS;
-	lcdPutCount(222, 40, 50, YELLOW, BLACK);
+	
 	
 	//lcdPutS("Hello World! 1 2 345", lcdTextX(5), lcdTextY(10), YELLOW, BLACK);
 	//lcdFilledRectangle(20, 20, 50, 50, TURKISE);
@@ -424,7 +424,7 @@ int main(void)
 	//lcdLine(20,50,100,50,LIME);
 	
 	//lcdPutCh('+',5,5,LIME,BLACK);
-	//lcdBitmap(bitmap,85,128,0,0,BLACK,YELLOW);
+	lcdBitmap(bitmap,85,128,0,0,BLACK,LIME);
 		
 	
     while(1)

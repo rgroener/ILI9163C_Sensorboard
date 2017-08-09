@@ -32,7 +32,7 @@
 #include <avr/pgmspace.h>
 #include <string.h>
 #include "ili9163lcd.h"
-#include <stdlib.h> 
+
 
 // 5x8 Font data
 // This font was created by Philippe Lucidarme and is available
@@ -679,21 +679,6 @@ void lcdBitmap(const unsigned char *data, uint8_t width, uint8_t height, uint8_t
 	}//end of for line
 		
 }//end of lcdBitmap
-
-void lcdPutCount(int count, uint8_t x, uint8_t y, uint16_t fgColour, uint16_t bgColour)
-{
-	int buffer[20];
-	int  num=0;
-	
-	num=count;
-	
-	itoa(num,buffer,10);
-		
-	// print our string
-	lcdPutS(buffer, x, y, fgColour, bgColour);
-	
-	
-}
 
 // LCD text manipulation functions --------------------------------------------------------------------------
 
